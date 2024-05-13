@@ -1,4 +1,74 @@
 # Artigos-Leituras
+
+# Metodos em C#
+
+O que são Métodos?
+
+
+
+Um método em C# é como uma receita em um livro de culinária. Ele é um conjunto de instruções que realizam uma tarefa específica quando são chamadas. Em outras palavras, é um bloco de código que faz algo útil.
+
+
+
+Como Definir um Método?
+
+
+
+Para definir um método em C#, você precisa seguir algumas regras simples:
+
+
+
+Escolha um nome para o método.
+Decida se o método será público (pode ser acessado de fora da classe) ou privado (só pode ser acessado de dentro da classe).
+Especifique o que o método retorna (se ele retorna algum valor ou não).
+Liste os parâmetros que o método precisa (se houver).
+
+
+Como Chamar um Método?
+
+
+
+Depois de definir um método, você pode chamá-lo sempre que precisar realizar a tarefa que ele executa. Existem dois tipos de métodos que você pode chamar:
+
+
+
+Métodos de Instância: Estes métodos precisam que você crie um objeto da classe em que estão definidos e, em seguida, você pode chamá-los usando esse objeto.
+
+
+
+Métodos Estáticos: Estes métodos pertencem à classe em si, não a objetos específicos. Você pode chamá-los diretamente usando o nome da classe.
+
+
+
+Exemplo:
+
+
+
+using System;
+
+class Program
+{
+  // Método simples que soma dois números
+  static int Soma(int num1, int num2)
+  {
+    return num1 + num2;
+  }
+
+  static void Main()
+  {
+    // Chamando o método e armazenando o resultado em uma variável
+    int resultado = Soma(5, 3);
+     
+    // Imprimindo o resultado
+    Console.WriteLine("A soma de 5 e 3 é: " + resultado);
+  }
+Definimos um método chamado Soma que recebe dois números como parâmetros e retorna a soma deles. Em seguida, chamamos esse método dentro do método Main e imprimimos o resultado.
+
+﻿
+
+https://learn.microsoft.com/en-us/dotnet/csharp/methods
+
+
 # Interfaces em C#
 
 Interfaces em C# são como contratos que definem um conjunto de funcionalidades relacionadas que uma classe ou uma estrutura (struct) podem implementar. Elas permitem que você defina um conjunto de métodos, propriedades, eventos ou indexadores que uma classe deve fornecer.
